@@ -21,6 +21,13 @@ int main(void){
       }
     }
   }
+  else if(!strcmp(op, "vezes")){
+    if(!strcmp(num1, "um")){
+      if(!strcmp(num2, "um")){
+	strcpy(ans, "um");
+      }
+    }
+  }
   printf("Resposta: %s\n", ans);
   
   return 0;
