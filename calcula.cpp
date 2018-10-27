@@ -6,6 +6,7 @@ int main(void){
 
   scanf("%s %s %s", num1, op, num2);
 
+  //Falta fazer pro resto dos infinitos números
   strcpy(ans, "nao sei bisho");
   if(!strcmp(op, "mais")){
     if(!strcmp(num1, "um")){
@@ -22,6 +23,13 @@ int main(void){
     }
   }
   else if(!strcmp(op, "vezes")){
+    if(!strcmp(num1, "um")){
+      if(!strcmp(num2, "um")){
+	strcpy(ans, "um");
+      }
+    }
+  }
+  else if(!strcmp(op, "sobre")){
     if(!strcmp(num1, "um")){
       if(!strcmp(num2, "um")){
 	strcpy(ans, "um");
