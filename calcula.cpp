@@ -14,6 +14,13 @@ int main(void){
       }
     }
   }
+  else if(!strcmp(op, "menos")){
+    if(!strcmp(num1, "um")){
+      if(!strcmp(num2, "um")){
+	strcpy(ans, "zero");
+      }
+    }
+  }
   printf("Resposta: %s\n", ans);
   
   return 0;
